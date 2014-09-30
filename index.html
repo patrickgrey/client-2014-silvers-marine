@@ -24,7 +24,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
         <!-- <link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Play:700|Orbitron:700|Aldrich' rel='stylesheet' type='text/css'> -->
-
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
         <link rel="stylesheet" href="styles/main.css">
 
         <script src="scripts/vendor/modernizr.js"></script>
@@ -63,7 +63,8 @@
                       </ul>
                     </li>
                     <!-- <li data-toggle="collapse" data-target=".in"><a href="#news">Gallery</a></li> -->
-                    <li data-toggle="collapse" data-target=".in"><a href="#news">History</a></li>
+                    <li data-toggle="collapse" data-target=".in"><a href="#news">Community</a></li>
+                    <!-- <li data-toggle="collapse" data-target=".in"><a href="#news">History</a></li> -->
                     <li  class="dropdown">
                         <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -88,88 +89,171 @@
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 sm-header-text">
                         <p>We invite you to experience what years of service knowledge and skill can mean for you and your boat. <span class="sm-header-text-hide">Please call to arrange a tour of our facilities, or to discuss any project you have in mind.</span></p>
-                        <a class="btn btn-lg btn-success sm-header-text-contact" href="#" role="button">Get in touch &raquo;</a>
-                        <a class="btn btn-lg btn-success" href="#" role="button">Find us &raquo;</a>
+                        <a class="btn btn-lg btn-success sm-header-text-contact" href="#footerContact" role="button">Get in touch &raquo;</a>
+                        <a class="btn btn-lg btn-success" href="#findUs" role="button">Find us &raquo;</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr class="hr-light">
 
-        <div class="container-fluid sm-dark">
+
+        <div id="theBoatyard" class="container-fluid sm-dark sm-the-boatyard">
+            <hr class="sm-hr-light">
             <div class="container">
+                <h2>The boatyard</h2>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <p>We are one of the most progressive boatyards in Scotland with a highly skilled and motivated workforce.</p>
                         <!-- <img src="images/smContentPlaceholder.jpg" class="sm-content-img img-responsive img-thumbnail center-block" alt="Content placeholder"> -->
+
                         <p>Our wide skill base with ISO9001: 2000 qualification and continuous training policy ensures that quality remains our prime concern.</p>
+
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <p>We can provide the skills and materials necessary to keep your boat in top condition.</p>
                         <p>We are located on the Rosneath Peninsula and situated at the picturesque and sheltered Stroul Bay on the west shore of the Gareloch.</p>
                     </div>
                 </div>
+                <!-- <div class="row">
+                    <div class="col-xs-12">
+                        <img src="images/smNewsPlaceholder.jpg" class="center-block sm-img-feature" width="100%" alt="news image">
+                    </div>
+                </div> -->
             </div>
         </div>
 
-        <div class="container-fluid sm-light">
+        <div id="customerReviews" class="container-fluid sm-light sm-customer-reviews">
+            <hr class="sm-hr-dark">
             <div class="container">
-                <h2>News / Customer Reviews</h2>
+                <h2>Customer Reviews</h2>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <h3>News item 1 <small>1st March 2014</small></h3>
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <img src="images/smNewsPlaceholder.jpg" class="img-thumbnail" width="100%" alt="news image">
-                            </div>
-                            <div class="col-xs-8">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio totam sapiente, commodi tenetur tempore, earum porro laudantium iure nemo sunt a enim?<br/><a href="#">Read more...</a></p>
-                            </div>
-                        </div>
 
+                        <h3>Joe Bloggs, <a href="#" target="_blank">Company ABC</a><br/> <small>1st March 2014</small></h3>
+                        <blockquote><p>If I had been astonished at first catching a glimpse of so outlandish an individual as Queequeg circulating among the polite society of a civilized town, that astonishment soon departed upon taking my first daylight stroll through the streets of New Bedford.</p></blockquote>
 
-                        <h3>News item 2 <small>1st March 2014</small></h3>
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <img src="images/smNewsPlaceholder.jpg" class="img-thumbnail" width="100%" alt="news image">
-                            </div>
-                            <div class="col-xs-8">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio totam sapiente, commodi tenetur tempore, earum porro laudantium iure nemo sunt a enim?<br/><a href="#">Read more...</a></p>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <h3>News item 3 <small>1st March 2014</small></h3>
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <img src="images/smNewsPlaceholder.jpg" class="img-thumbnail" width="100%" alt="news image">
-                            </div>
-                            <div class="col-xs-8">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio totam sapiente, commodi tenetur tempore, earum porro laudantium iure nemo sunt a enim?<br/><a href="#">Read more...</a></p>
-                            </div>
-                        </div>
 
-                        <h3>News item 4 <small>1st March 2014</small></h3>
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <img src="images/smNewsPlaceholder.jpg" class="img-thumbnail" width="100%" alt="news image">
-                            </div>
-                            <div class="col-xs-8">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio totam sapiente, commodi tenetur tempore, earum porro laudantium iure nemo sunt a enim?<br/><a href="#">Read more...</a></p>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-6">
+
+                        <h3>Jane Smith, <a href="#" target="_blank">Company ABC</a><br/> <small>1st March 2014</small></h3>
+                        <blockquote><p>I was born in Connecticut about thirty years ago. My name is David Innes. My father was a wealthy mine owner. When I was nineteen he died. All his property was to be mine when I had attained my majority—provided that I had devoted the two years intervening in close application to the great business I was to inherit.</p></blockquote>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+
+                        <h3>Eddie Stobart, <a href="#" target="_blank">Company ABC</a><br/> <small>1st March 2014</small></h3>
+                        <blockquote><p>The old man wiped the tears away on his grimy knuckles and took up the tale in a tremulous, piping voice that soon strengthened as he got the swing of the narrative.</p></blockquote>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+
+                        <h3>John Smythe, <a href="#" target="_blank">Company ABC</a><br/> <small>1st March 2014</small></h3>
+                        <blockquote><p>The boy did not exactly utter these words, but something that remotely resembled them and that was more guttural and explosive and economical of qualifying phrases. His speech showed distant kinship with that of the old man, and the latter's speech was approximately an English that had gone through a bath of corrupt usage.</p></blockquote>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid sm-footer sm-dark">
-            <footer class="container">
-                <p>&copy; Silvers Marine (UK) Ltd. 2014</p>
-                <p>Designed &amp; developed by: <a href="http://patrickgrey.co.uk" target="_blank">patrickgrey.co.uk</a></p>
-            </footer>
-        </div>
+        <footer class="container-fluid sm-footer sm-dark sm-footer-contact">
+            <hr class="sm-hr-light">
+
+            <div class="container">
+
+                <h2 id="footerContact">Contact</h2>
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 sm-footer-contact-tel">
+                        <p>Tel: <a href="tel:+441436831222">+44 (0)1436 831 222</a></p>
+                        <p>E-mail: <a href="mailto:enquiries@silversmarine.co.uk">enquiries@silversmarine.co.uk</a></p>
+                        <!-- <hr> -->
+                    </div>
+                    <div class="col-xs-12 col-sm-6 sm-footer-contact-addr">
+                        <address class="sm-footer-address">
+                            Silvers Marine<br>
+                            Silverhills<br>
+                            Rosneath<br>
+                            Argyll<br>
+                            G84 0RW
+                        </address>
+                        <!-- <hr> -->
+                    </div>
+
+                </div>
+
+                <h2 id="findUs">Find us</h2>
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 sm-footer-find-us-road">
+                        <h3>Find us by road</h3>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="#" target="_blank">View larger map (new window)</a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-12">
+                        <div id="smFooterFindUsRoadMap" class="sm-footer-find-us-road-map">
+                            <p>&nbsp;Loading map...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row sm-footer-find-us-sea">
+
+                    <div class="col-xs-12 col-sm-6 ">
+                        <h3>Find us by sea</h3>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="#" target="_blank">View larger map (new window)</a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-12">
+                        <div id="smFooterFindUsRoadMap" class="sm-footer-find-us-sea-map">
+                            <p>&nbsp;Loading map...</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row sm-footer-bottom">
+
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="http://www.gssplant.co.uk/" target="_blank"><img src="images/GSS-Logo-bg.jpg" class="sm-the-boatyard-gss" alt="GSS (Plant) Ltd."></a>
+                        <p>Silvers Marine is owned and supported by international marine company, <a href="http://www.gssplant.co.uk/" target="_blank">GSS (Plant) Ltd</a>.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 sm-footer-copy">
+                        <p>&copy; Silvers Marine (UK) Ltd. 2014</p>
+                        <p>Designed &amp; developed by: <a href="http://patrickgrey.co.uk" target="_blank">patrickgrey.co.uk</a></p>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </footer>
 
 
 
@@ -203,9 +287,13 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
+
+
         <script src="scripts/vendor.js"></script>
 
         <script src="scripts/plugins.js"></script>
+
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
         <script src="scripts/main.js"></script>
 </body>
